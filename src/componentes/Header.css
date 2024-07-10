@@ -1,0 +1,47 @@
+/*CONTENEDOR PRINCIPAL*/
+.header{
+    background-color: #000000E5;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 29px 0px #2271D1B2;
+}
+
+/*IMAGEN DE ALURAFLIX*/
+.logo_af{
+    width: 150px;
+}
+
+/*CONTENEDOR DE LOS BOTONES*/
+.botones_header{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_home, .btn_vn{
+    border-radius: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    background: none;
+    padding: 8px;
+    width: 120px;
+    cursor: pointer;
+}
+.btn_home{
+    color: white;
+    border: solid 2px white;
+}
+.btn_home:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.btn_vn{
+    border: solid 3px #2271D1;
+    box-shadow: inset 0px 0px 10px 0px #2271D1B2;  
+    /*0px 0px desplazamiento horizontal y vertical*/
+    /*10px valor de desenfoque, mientras mas pequeno mas cerca de la orilla*/
+    /*0px valor de propagacion*/
+    color: #2271D1;
+}
+.btn_vn:hover{
+    background-color: rgba(34, 113, 209, 0.5);
+}

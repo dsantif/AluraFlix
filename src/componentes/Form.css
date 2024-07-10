@@ -1,0 +1,81 @@
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 350px;
+    padding: 20px;
+    
+  }
+
+  .titulo_form{
+    color: #2271D1;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  label{
+    color: white;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    border-radius: 15px;
+    border: 3px solid #6BD1FF;
+    padding: 8px;
+    font-size: 15px;
+    outline: none;
+    background: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  textarea{
+    border-radius: 15px;
+    border: 3px solid #6BD1FF;
+    background: none;
+    padding: 8px;
+    font-family: varela, sans-serif;
+    outline: none;
+    color: white;
+    resize: none;
+  }
+
+  select{
+    border-radius: 15px;
+    border: 3px solid #6BD1FF;
+    background: none;
+    padding: 8px;
+    color: grey;
+    margin-bottom: 15px;
+    outline: none;
+  }
+
+  .botones_form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .btn_guardar, .btn_limpiar{
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    padding: 8px;
+    width: 100px;
+  }
+  .btn_guardar{
+    color: #2271D1;
+    border: solid 3px #2271D1;
+    box-shadow: inset 0px 0px 10px 0px #2271D1B2;
+  }
+  .btn_guardar:hover{
+    background-color: rgba(34, 113, 209, 0.5);
+  }
+  .btn_limpiar{
+    color: white;
+    border: solid 2px white;
+  }
+  .btn_limpiar:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+  }
