@@ -58,7 +58,7 @@ form {
     margin-top: 25px;
   }
   .btn_guardar, .btn_limpiar{
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     background: none;
     padding: 8px;

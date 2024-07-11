@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 .btn_home, .btn_vn{
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: "Varela Round", sans-serif;
     font-weight: bold;
     background: none;
