@@ -1,7 +1,7 @@
 /*CONTENEDOR PRINCIPAL*/
 .header{
     background-color: #000000E5;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 5px 29px 0px #2271D1B2;
