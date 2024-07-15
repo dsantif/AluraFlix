@@ -11,14 +11,14 @@
     align-items: center; /* Centra verticalmente */
 }
 
-.card{
+.banner_card{
     display: flex;
     justify-content: space-around; /* Mantiene el espacio entre elementos */
     align-items: center; /* Asegura que los elementos dentro de la card estén centrados verticalmente */
     width: 100%; /* Ajusta el ancho según sea necesario */
 }
 
-.texto_card{
+.texto_banner{
     color: white;
 }
 .fondo_titulo{
@@ -26,31 +26,31 @@
     width: 270px;
     border-radius: 20px;
 }
-.titulo_card{
+.titulo_banner{
     font-size: 45px;
 }
-.subtitulo_card, .descripcion_card{
+.subtitulo_banner, .descripcion_banner{
     text-align: left;
     font-weight: lighter;
 }
-.subtitulo_card{
+.subtitulo_banner{
     font-size: 35px;
 }
-.descripcion_card{
+.descripcion_banner{
     font-size: 20px;
     width: 650px;
 }
-.video_card{
+.video_banner{
     display: flex;
     align-items: center;
 }
-.card_img img{
+.banner_img img{
     width: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(107, 209, 255, 0.8);
     border: 3px solid #6BD1FF;
     transition: transform 0.5s ease;
 }
-.card_img:hover{
+.banner_img:hover{
     transform: scale(1.1);
 }
