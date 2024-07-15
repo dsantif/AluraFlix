@@ -1,6 +1,19 @@
 import "./Menu.css"
+import React, {useState} from "react";
+import Modal from "./Modal"
 
 function Menu(){
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
     return (
         <div className="menu_container">
             <div className="frontend_container">
@@ -17,8 +30,8 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_f"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
-                        </div>
+                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
+                        </div>                        
                     </div>
 
                     <div className="cards_box">
@@ -29,7 +42,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_f"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -41,7 +54,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_f"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_f"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -61,7 +74,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_b"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -73,7 +86,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_b"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -85,7 +98,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_b"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_b"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -106,7 +119,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_i"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -118,7 +131,7 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_i"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
@@ -130,14 +143,19 @@ function Menu(){
                         </div>
                         <div className="btn_cards">
                             <button className="btn_borrar_i"><i class="fi fi-rr-delete-right"></i>Eliminar</button>
-                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit"></i>Editar</button>
+                            <button className="btn_editar_i"><i class="fi fi-rr-comment-alt-edit" onClick={openModal}></i>Editar</button>
                         </div>
                     </div>
 
                 </div>
 
             </div>
+
+            {/* Modal */}
+            <Modal isOpen={modalOpen} onClose={closeModal} />
         </div>
+
+        
     )
 }
 
