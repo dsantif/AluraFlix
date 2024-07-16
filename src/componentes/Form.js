@@ -38,29 +38,29 @@ function Form(){
 
     return <div>
     <h2 className="titulo_form">EDITAR CARD:</h2>
-        <form>
+        <form className="form">
             <label>Título</label>
-            <input name="titulo" type="text" placeholder="Título del nuevo video..." value={titulo} onChange={handleTituloChange}></input>
+            <input data-titulo name="titulo" type="text" placeholder="Título del nuevo video..." value={titulo} onChange={handleTituloChange}></input>
         
             <label>Categoría</label>
-            <select name="categoria" value={categoria} onChange={handleCategoriaChange}>
+            <select data-categoria name="categoria" value={categoria} onChange={handleCategoriaChange}>
                 <option value="">Selecciona una categoría</option>
-                <option value="Música">Frontend</option>
-                <option value="Deportes">Backend</option>
-                <option value="Educación">Innovacion y Gestion</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Innovacion y Gestion</option>
             </select>
         
             <label>Imagen</label>
-            <input name="imagen" type="text" placeholder="Imagen..." value={imagen} onChange={handleImagenChange}></input>
+            <input data-imagen name="imagen" type="text" placeholder="Imagen..." value={imagen} onChange={handleImagenChange}></input>
         
             <label>Video</label>
-            <input name="video" type="text" placeholder="Link del video..." value={video} onChange={handleVideoChange}></input>
+            <input data-video name="video" type="text" placeholder="Link del video..." value={video} onChange={handleVideoChange}></input>
 
             <label>Descripcion</label>
-            <textarea placeholder="Pequeña descripción sobre el video..." value={descripcion} onChange={handleDescripcionChange}></textarea>
+            <textarea data-descripcion placeholder="Pequeña descripción sobre el video..." value={descripcion} onChange={handleDescripcionChange}></textarea>
 
             <div className="botones_form">
-                <button className="btn_guardar">GUARDAR</button>
+                <button className="btn_guardar" type="submit">GUARDAR</button>
                 <button className="btn_limpiar" type="button" onClick={handleClear}>LIMPIAR</button>
             </div>
         </form>

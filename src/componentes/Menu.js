@@ -21,7 +21,7 @@ function Menu(){
                     <h4>FRONTEND</h4>
                 </div>
 
-                <div className="cards_container">
+                <div className="cards_container_front">
                     <div className="cards_box">
                         <div className="front_img">
                             <a href="https://youtu.be/PztCEdIJITY?si=YtfFzB3PEW_I9w4O" target="blank">
@@ -65,7 +65,7 @@ function Menu(){
                 <div className="titulo_back">
                     <h4>BACKEND</h4>
                 </div>
-                <div className="cards_container">
+                <div className="cards_container_back">
                     <div className="cards_box">
                         <div className="back_img">
                             <a href="https://www.youtube.com/watch?v=5XPojnx9bb8" target="blank">
@@ -110,7 +110,7 @@ function Menu(){
                 <div className="titulo_innovacion">
                     <h4>INNOVACION Y GESTION</h4>
                 </div>
-                <div className="cards_container">
+                <div className="cards_container_inn">
                     <div className="cards_box">
                         <div className="inn_img">
                             <a href="https://www.youtube.com/watch?v=vhwspfvI52k" target="blank">
